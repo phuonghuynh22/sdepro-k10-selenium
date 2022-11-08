@@ -28,7 +28,7 @@ public class LaunchBrowser {
         WebDriver driver = new ChromeDriver(chromeOptions);
         driver.get("https://learn.sdetpro.com");
 
-        // DEBUG PURPOSE ONLY
+        // DEBUG PURPOSE ONLYgit
         try {
             Thread.sleep(3000);
         }catch (Exception ignored){}

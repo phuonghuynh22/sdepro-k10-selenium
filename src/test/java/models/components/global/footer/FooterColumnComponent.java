@@ -5,10 +5,12 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
+import java.util.List;
+
 public class FooterColumnComponent extends Component {
 
     private static final By headerSel = By.tagName("h3");
-    private static final By linkSel = By.tagName("li");
+    private static final By linkSel = By.cssSelector("li a");
 
     public FooterColumnComponent(WebDriver driver, WebElement component) {
         super(driver, component);
@@ -18,7 +20,7 @@ public class FooterColumnComponent extends Component {
         return component.findElement(headerSel);
     }
 
-    public WebElement linksElem (){
-        return component.findElement(linkSel);
+    public List<WebElement> linksElem (){
+        return component.findElements(linkSel);
     }
 }

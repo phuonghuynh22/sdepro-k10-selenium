@@ -52,7 +52,7 @@ public class BaseTest {
             int min = calendar.get(Calendar.MINUTE);
             int sec = calendar.get(Calendar.SECOND);
 
-            String fileName = methodName + " - " + y + " - " + m + " - " + d + " - " + hr + " - " + min + " - " + sec + ".png";
+            String fileName = methodName + "-" + y + "-"  + m + "-"  + d + "-"  + hr + "-"  + min + "-"  + sec + ".png";
 
             // Take screenshot
             File screenshotBase64Data = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);

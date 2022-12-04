@@ -11,5 +11,8 @@ public interface Urls {
     String JS_ALERT_SLUG = "/javascript_alerts";
     String FLOATING_MENU_SLUG = "/floating_menu";
 
-    String DEMO_PAGE_URL = "https://demowebshop.tricentis.com/";
+    String DEMO_PAGE_URL = "https://demowebshop.tricentis.com";
+    String CHEAP_COMPUTER_URL = "/build-your-cheap-own-computer";
+    String STANDARD_COMPUTER_URL = "/build-your-own-computer";
+
 }

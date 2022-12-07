@@ -10,6 +10,11 @@ import java.time.Duration;
 public class DriverFactory {
 
     public static WebDriver getChromeDriver() {
+        /*
+         * Upgraded to Selenium 4.6.0 hence these following commented line of codes are obsoleted
+         * */
+
+        /*
         String currentProjectLocation = System.getProperty("user.dir");
         String chromeDriverLocation;
 
@@ -24,12 +29,14 @@ public class DriverFactory {
         String chromeAbsoluteLocation = currentProjectLocation.concat(chromeDriverLocation);
         System.setProperty("webdriver.chrome.driver", chromeAbsoluteLocation);
 
+         */
+
         // Setup Chrome Options | Optional
         ChromeOptions chromeOptions = new ChromeOptions();
         chromeOptions.addArguments("--incognito");
 
         WebDriver driver = new ChromeDriver(chromeOptions);
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(5L)); // best practice: max 15L
-        return new ChromeDriver(chromeOptions);
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15)); // best practice: max 15L
+        return driver;
     }
 }

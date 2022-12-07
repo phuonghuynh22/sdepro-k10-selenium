@@ -18,6 +18,6 @@ public class CheapComputerComponent extends ComputerEssentialComponent{
 
     @Override
     public String selectRAMType(String type) {
-        return null;
+        return selectCompOption(type);
     }
 }
